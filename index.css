@@ -1,0 +1,583 @@
+@import url('https://fonts.cdnfonts.com/css/futura-now-headline');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Futura Now Headline", "Lucida Sans", Tahoma, sans-serif;
+}
+
+*::selection {
+    background-color: black;
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#cursor {
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    background-color: white;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+
+}
+
+#nav {
+    /* height: 100px; */
+    width: 100%;
+    /* background-color: burlywood; */
+    position: fixed;
+    z-index: 99;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#nav11 {
+    height: 83px;
+    overflow: hidden;
+}
+
+#nav11 svg {
+    display: block;
+}
+
+#nav #navv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+}
+
+#navv #link a {
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+    margin: 0 27px;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+}
+
+#navv #link a:hover {
+    color: #b6b6b6;
+}
+
+#navv #icon i {
+    font-size: 18px;
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+#navv #icon {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    border-radius: 50px;
+    background-color: #F7F7F7;
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+#page1 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 1.6vw;
+    padding-top: 15vw;
+}
+
+#page1 h1 {
+    font-family: "Futura Now Headline", "Lucida Sans", Tahoma, sans-serif;
+    font-size: 16.1vw;
+    font-weight: 800;
+    line-height: 14vw;
+    letter-spacing: -0.7vw;
+}
+
+#video {
+    height: 100vh;
+    width: 100%;
+    margin-top: 5vw;
+    margin-bottom: 7vw;
+}
+
+#video img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3vw 1.6vw;
+    justify-content: space-between;
+    /* margin-bottom: -10vh; */
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1.6vw;
+    border-bottom: 1px solid black;
+}
+
+.line .st {
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+}
+
+#page2 .elem {
+    height: 100%;
+    width: 30%;
+    display: flex;
+
+    overflow: hidden;
+    /* margin-bottom: 5vw; */
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 .elem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+
+}
+
+#page2 .elem .caps {
+    height: 50px;
+    width: 70%;
+    font-family: "Helvetica Now Text", "Lucida Sans", Tahoma, sans-serif;
+    position: absolute;
+    border-radius: 50px;
+    z-index: 99;
+    background-color: #FFF6DE;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 12px;
+}
+
+#page2 .elem .firse {
+    background-color: #8AAAD6;
+}
+
+#page2 .elem .again {
+    background-color: white;
+}
+
+#page2 .elem .caps .b {
+    font-weight: 500;
+    font-size: 12.5px;
+}
+
+#page2 .elem .caps .rii {
+    font-size: 20px;
+}
+
+#page2 .elem .connt {
+    height: 0;
+    width: 70%;
+    background-color: #FFF6DE;
+    display: flex;
+    font-size: 12px;
+    position: absolute;
+    top: 51%;
+    left: 15%;
+    padding: 0px 10px;
+    border-radius: 25px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    z-index: 98;
+    transition: height .5s ease;
+}
+
+#page2 .elem .connt .firsttt {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+#page2 .elem .connt .firsttt img {
+    height: 110px;
+    width: 110px;
+    margin-bottom: 10px;
+}
+
+
+#middle-part {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 100px;
+    padding: 1.6vw;
+}
+
+#middle-part .fr-part {
+    width: 60%;
+    font-size: 57px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1;
+
+}
+
+#middle-part .sc-part {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    gap: 22px;
+    width: 23.5%;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+#middle-part .sc-part .on {
+    cursor: pointer;
+    width: 120px;
+    display: flex;
+    font-weight: 500;
+    font-family: "Montserrat", serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 11.5px;
+    /* border: 2px solid red; */
+    border-bottom: 1px solid black;
+    color: rgb(133, 131, 131);
+}
+
+
+#page3 {
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.child {
+    margin-top: 3vw;
+    height: 80vh;
+    width: 40vw;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.child img {
+    height: 100%;
+}
+
+#child1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 11.5px;
+}
+
+.child .info {
+    margin-top: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+
+#child2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 11.5px;
+}
+
+
+#page4 {
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+}
+
+#page4 .line {
+    margin-top: 80px;
+}
+
+.circles {
+    padding: 0 5vw;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circles i {
+    font-size: 25px;
+}
+
+.hea {
+    font-weight: 400;
+    font-size: 22px;
+    padding: 0 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heads {
+    font-weight: 400;
+    font-size: 22px;
+    padding: 0 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#paragra {
+    min-height: 50vh;
+    margin-top: 100px;
+    font-weight: 800;
+    font-size: 75px;
+    line-height: 1;
+
+    width: 100%;
+    padding: 0 10vw;
+    text-align: center;
+    letter-spacing: .1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#paragra p {
+    margin-bottom: 100px;
+    text-transform: uppercase;
+}
+
+
+.button {
+    background-color: black;
+    color: white;
+    height: 60px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 12px;
+}
+#paragra .msg {
+    font-size: 18px;
+    margin-top: 20px;
+    width: 25%;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 65vh;
+}
+
+#page5{
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 0 1.6vw;
+    gap: 1.6vw;
+    margin-bottom: 50vh;
+}
+#page5 .redmi{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#page5 .redmi .buds{
+    font-size: 22px;
+    font-weight: 700;
+}
+#page5 .redmi p{
+    font-size: 17px;
+    width: 70%;
+}
+#page5 .redmi .earbud{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 11px;
+    width: 130px;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+#last-page{
+min-height: 120vh;
+position: relative;
+width: 100%;
+padding: 0 1.9vw;
+}
+#last-page .strrr{
+    font-size: 40px;
+    font-weight: 800;
+}
+#last-page .line{
+    border-bottom: 1px solid rgb(201, 201, 201);
+    margin-bottom: 30vh;
+}
+#last-page .line i{
+    font-size: 25px;
+    padding-left: 10px;
+    margin-bottom: -15px;
+}
+#last-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#last-sec .jayyy .jayy{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+#last-sec .jayyy .jyy{
+    text-align: start;
+}
+#last-sec .jayyy .jayy a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+#last-sec .jayyy .jay{
+    color: grey;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+#last-sec .jayyy .jayy a:hover{
+    color: rgb(179, 177, 177);
+}
+.coo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.coo .co{
+    font-size: 12px;
+    color: rgb(179, 177, 177);
+}
+.coo a{
+    text-decoration: none;
+    color: rgb(179, 177, 177);
+    font-size: 12px;
+}
+.over{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.over p{
+    font-size: 15px;
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    #page1 {
+        min-height: 80vh;
+        padding: 0 5vw;
+        padding-top: 42vw;
+
+    }
+
+    #page1 h1 {
+        font-size: 14.3vw;
+        line-height: 12vw;
+    }
+
+    #page1 #video {
+        margin-top: 4vw;
+        height: 27.5vh;
+    }
+
+    #page2 {
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 3vw 5vw;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    #page2 .elem {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+
+    }
+}
